@@ -1,12 +1,22 @@
 .myaccount
     .header &
-        flex: 0 1 180px
-        margin-left: auto
+        margin-right: 0
+
+        @media media-max-lg
+            margin-left: auto
+
+        @media media-min-lg
+            flex: 0 1 180px
 
     &__header
         a
             display: flex
+            justify-content: center
             align-items: center
+
+            @media media-max-lg
+                width: 48px
+                height: 48px
 
         .ico
             width: 18px
@@ -19,6 +29,9 @@
             font-weight: regular
             font-size: 14px
             opacity: .5
+
+            @media media-max-lg
+                display: none
 
     &__content
         display: none !important

@@ -1,6 +1,15 @@
 .header
     align-items: center
-    padding-top: 24px
+
+    @media media-min-lg
+        padding-top: 24px
+        transition: all .2s ease-in-out
+
+        .scrolling &
+            padding-top: 10px
+
+    @media media-max-lg
+        padding: 10px 0
 
     &-container
         position: sticky

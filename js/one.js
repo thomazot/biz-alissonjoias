@@ -1352,8 +1352,7 @@ function categoriesTitle() {
             item.querySelector('.a--0') &&
             item.querySelector('.a--0').textContent.trim()
         const child = item.querySelector('.box--1')
-
-        child.setAttribute('data-title', title)
+        if (child) child.setAttribute('data-title', title)
     })
 }
 

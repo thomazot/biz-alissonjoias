@@ -1,10 +1,16 @@
 .mycart
     &__header
         position: relative
+        margin: 0
 
         a
             display: flex
+            justify-content: center
             align-items: center
+
+            @media media-max-lg
+                width: 48px
+                height: 48px
 
         .ico
             width: 18px
@@ -17,6 +23,9 @@
             font-weight: regular
             font-size: 14px
             opacity: .5
+
+            @media media-max-lg
+                display: none
 
         .qtd
             position: absolute
@@ -33,6 +42,10 @@
             color: var(--primary-contrast)
             font-weight: bold
             font-size: 10px
+
+            @media media-max-lg
+                top: 0
+                left: 25px
 
     &__content
         display: none !important
