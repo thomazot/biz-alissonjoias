@@ -1,0 +1,42 @@
+.search
+    .header &
+        @media media-min-lg
+            &__button
+                display: flex
+                order: -1
+                justify-content: center
+                align-items: center
+                margin-right: 10px
+                padding: 0
+                width: 32px
+                height: 32px
+                border-radius: 0
+                background: none
+                color: var(--primary)
+
+                .ico
+                    width: 24px
+                    height: 24px
+                    fill: currentColor
+
+            &__input
+                padding: 0
+                height: 32px
+                border-bottom: solid 1px var(--primary-contrast)
+                border-radius: 0
+                background: none
+                box-shadow: none
+                color: var(--primary-contrast)
+                font-weight: regular
+                font-size: 14px
+
+                &::placeholder
+                    opacity: .5
+
+                &:focus
+                    border-color: transparent
+                    border-bottom: solid 1px var(--primary-contrast)
+                    border-radius: 0
+
+                    &::placeholder
+                        color: transparent
