@@ -12030,6 +12030,8 @@ body {
 @media (max-width: 992px) {
   .header .myaccount {
     margin-left: auto;
+    border-radius: 4px;
+    background: var(--primary);
   }
 }
 @media (min-width: 993px) {
@@ -12069,6 +12071,13 @@ body {
   display: none !important;
 }
 
+@media (max-width: 992px) {
+  .header .mycart {
+    margin: 0 0.63rem;
+    border-radius: 4px;
+    background: var(--primary);
+  }
+}
 .mycart__header {
   position: relative;
   margin: 0;
@@ -12119,8 +12128,8 @@ body {
 }
 @media (max-width: 992px) {
   .mycart__header .qtd {
-    top: 0;
-    left: 1.56rem;
+    top: -0.31rem;
+    left: 1.88rem;
   }
 }
 .mycart__content {
@@ -12144,6 +12153,9 @@ body {
   }
   .header .search__button {
     border-radius: 4px;
+  }
+  .header .search__button:hover {
+    background: var(--primary);
   }
 }
 @media (min-width: 569px) {
