@@ -1,0 +1,13 @@
+.block-black
+    bg = #020D13
+
+    --color: var(--primary)
+
+    &
+        margin-top: -(gap / 2)
+        background: bg
+
+    &__container
+        margin: 0 auto
+        max-width: 'calc(100% - %s)' % gap
+        width: viewport

@@ -1,0 +1,54 @@
+.instagram
+    background: linear-gradient(180deg, rgba(222, 203, 191, 0) 0, #DECBBF 100%)
+
+    &__container
+        container()
+
+    &__header
+        margin-bottom: 20px
+        text-align: center
+
+        img
+            margin-bottom: 15px
+            width: 70px
+
+        h3
+            fontAdobeCaslon()
+
+            color: var(--color-text-black)
+            font-size: 32px
+            line-height: 48px
+
+    &__images
+        display: grid
+        padding: 5px
+        background: white
+        grid-template-areas: 'inst1 inst3 inst4 inst5 inst6' 'inst2 inst3 inst4 inst5 inst7'
+        gap: 5px
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+        a
+            &:nth-child(1)
+                grid-area: inst1
+
+            &:nth-child(2)
+                grid-area: inst2
+
+            &:nth-child(3)
+                grid-area: inst3
+
+            &:nth-child(4)
+                grid-area: inst4
+
+            &:nth-child(5)
+                grid-area: inst5
+
+            &:nth-child(6)
+                grid-area: inst6
+
+            &:nth-child(7)
+                grid-area: inst7

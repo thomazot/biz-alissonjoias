@@ -1,0 +1,47 @@
+.owl
+    &-carousel
+        --color: #4B4C6F
+        --color-pagination: #4C462A
+        --color-pagination-active: #323348
+
+    &-prev, &-next
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 52px
+        height: 52px
+        background: none
+        box-shadow: none
+        color: var(--color)
+        font-size: 0
+
+        &:before
+            font-size: 20px
+
+        &:hover
+            background: none
+            color: var(--color)
+
+            @media media-min-lg
+                color: var(--primary)
+
+    &-pagination
+        padding-bottom: gap
+
+    &-page
+        span
+            width: 6px
+            height: 6px
+            background: var(--color-pagination)
+            opacity: .3
+
+        &.active span
+            background: var(--color-pagination-active)
+            opacity: 1
+
+    @media (min-width: (viewport + 104px))
+        &-prev
+            left: -52px
+
+        &-next
+            right: -52px

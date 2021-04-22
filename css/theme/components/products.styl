@@ -1,0 +1,74 @@
+.products
+    margin: gap 0
+
+    &__title
+        fontAdobeCaslon()
+
+        color: var(--color, var(--color-products-title, #000))
+        font-weight: bold
+        font-style: italic
+        font-size: 32px
+        line-height: 48px
+
+    &__item
+        padding: 10px
+
+    &__case
+        position: relative
+        justify-content: flex-start
+        margin-bottom: 55px
+        padding: 1px (gap / 2)
+        border-radius: 4px 4px 0 0
+        box-shadow: none
+        text-align: center
+
+        @media media-min-lg
+            border-radius: 4px
+
+            &:hover
+                border-radius: 4px 4px 0 0
+                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1)
+
+    &__name
+        display: block
+        padding-bottom: 15px
+        color: var(--color-text-black)
+        font-weight: bold
+        font-size: 14px
+        line-height: 20px
+
+    &__footer
+        position: absolute
+        top: calc(100% + 2px)
+        left: 0
+        width: 100%
+
+        @media media-min-lg
+            visibility: hidden
+            opacity: 0
+            transition: all .2s ease-in-out
+            transform: translateY(-10px)
+
+            .products__case:hover &
+                visibility: visible
+                opacity: 1
+                transform: translateY(0)
+
+        .button
+            width: 100%
+            height: 50px
+            border-radius: 0 0 4px 4px
+            background: linear-gradient(180deg, #7DE26C 0, #35A333 100%)
+            box-shadow: none
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+
+            @media media-min-lg
+                transition: none
+
+                &:hover
+                    background: #35A333
+
+    .price-box
+        margin-bottom: 0
