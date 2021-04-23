@@ -1,0 +1,53 @@
+.newsletter
+    padding: gap 0
+    background-color: var(--color-back)
+    background-image: url(bg)
+    background-position: top center
+    background-size: auto auto
+
+    &__form
+        container()
+
+        @media media-min-lg
+            flex-wrap: nowrap
+
+    &__text
+        @media media-min-lg
+            flex: 0 1 400px
+            min-width: 0
+
+        h3
+            margin-bottom: 10px
+            color: var(--primary)
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 24px
+            line-height: 32px
+
+        p
+            color: var(--primary-contrast)
+            font-weight: regular
+            font-size: 14px
+            line-height: 18px
+
+            strong
+                color: var(--primary)
+
+    &__submit
+        @media media-min-lg
+            flex: 0 0 175px
+
+    &__btn
+        border-radius: 4px
+        background: linear-gradient(180deg, #7DE26C 0, #35A333 100%)
+        box-shadow: none
+        text-align: center
+        text-transform: uppercase
+        letter-spacing: .04em
+        font-weight: bold
+        font-size: 14px
+        line-height: 20px
+
+        &:hover
+            @media media-min-lg
+                background: #35A333

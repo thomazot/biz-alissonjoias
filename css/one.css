@@ -11656,6 +11656,7 @@ table .change-product-link:hover {
   --thumblr: #32506d;
   --linkedin: #007bb5;
   --instagram: #e4405f;
+  --color-black: #020d13;
   --color-text-black: #323348;
   --color-products-title: #0e3341;
 }
@@ -11933,6 +11934,7 @@ body {
 .header-container {
   position: sticky;
   top: 0;
+  background-color: var(--color-black);
   background-image: url("/media/interface/images/bg.jpg");
   background-position: top center;
   background-size: auto auto;
@@ -12171,6 +12173,69 @@ body {
 }
 .mycart__content {
   display: none !important;
+}
+
+.newsletter {
+  padding: 2rem 0;
+  background-color: var(--color-back);
+  background-image: url("/media/interface/images/bg.jpg");
+  background-position: top center;
+  background-size: auto auto;
+}
+.newsletter__form {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(100% - 32px);
+  width: 70rem;
+}
+@media (min-width: 993px) {
+  .newsletter__form {
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 993px) {
+  .newsletter__text {
+    flex: 0 1 400px;
+    min-width: 0;
+  }
+}
+.newsletter__text h3 {
+  margin-bottom: 0.63rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.newsletter__text p {
+  color: var(--primary-contrast);
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.13rem;
+}
+.newsletter__text p strong {
+  color: var(--primary);
+}
+@media (min-width: 993px) {
+  .newsletter__submit {
+    flex: 0 0 175px;
+  }
+}
+.newsletter__btn {
+  border-radius: 4px;
+  background: linear-gradient(180deg, #7de26c 0, #35a333 100%);
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 993px) {
+  .newsletter__btn:hover {
+    background: #35a333;
+  }
 }
 
 .owl-carousel {
@@ -12439,6 +12504,9 @@ body {
 }
 
 .cms-home .about {
+  margin-top: -1rem;
+}
+.cms-home .newsletter {
   margin-top: -1rem;
 }
 .cms-home #banner__banner-vitrine {
