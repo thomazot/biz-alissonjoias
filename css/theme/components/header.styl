@@ -1,4 +1,40 @@
 .header
+    position: relative
+    z-index: 2
+    align-items: center
+    background-image: url(bg)
+    background-position: top center
+    background-size: auto auto
+
+    @media media-min-lg
+        padding: 10px 0
+        max-height: 135px
+        height: 135px
+        transition: all .2s ease-in-out
+
+        .scrolling &
+            max-height: 80px
+
+    @media media-max-lg
+        padding: 10px 0
+
     &-container
         position: sticky
         top: 0
+        background-color: var(--color-black)
+        background-image: url(bg)
+        background-position: top center
+        background-size: auto auto
+
+        @media media-min-lg
+            padding-bottom: 30px
+            transition: all .2s ease-in-out
+
+            .scrolling &
+                padding-bottom: 0
+
+    .search
+        flex: 0 1 350px
+
+    .logo
+        margin: 0 auto

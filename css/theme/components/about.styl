@@ -1,0 +1,33 @@
+.about
+    --bg: #DECBBF
+
+    &
+        background: var(--bg)
+
+    &__container
+        container()
+
+        display: flex
+        align-items: center
+
+    &__figure
+        flex: 0 1 510px
+
+        @media media-max-lg
+            display: none
+
+    &__content
+        flex: 1
+        padding: gap 0
+        min-width: 0
+        color: var(--color-text-black)
+
+    &__title
+        fontAdobeCaslon()
+
+        padding-bottom: 20px
+        font-size: 32px
+        line-height: 48px
+
+    &__text
+        line-height: 41px

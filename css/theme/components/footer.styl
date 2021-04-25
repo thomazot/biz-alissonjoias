@@ -1,0 +1,77 @@
+.footer
+    @media media-max-lg
+        text-align: center
+
+        .flex--a-center
+            justify-content: center
+
+    &__title
+        margin-bottom: 11px
+        color: var(--primary)
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 14px
+        line-height: 24px
+
+    &__subtitle, &__store
+        color: var(--color-gray)
+        font-weight: 500
+        font-size: 12px
+
+    &__store
+        text-transform: uppercase
+
+    &__content
+        color: var(--color-gray)
+        font-weight: regular
+        font-size: 12px
+        line-height: 1
+
+    &__phone
+        display: inline-block
+        padding: 5px 0
+        color: var(--primary)
+        font-weight: regular
+        font-size: 16px
+
+        small
+            font-size: 11px
+
+    &__email
+        display: inline-block
+        padding: 5px 0 10px
+        color: var(--color-gray)
+        font-weight: regular
+        font-size: 12px
+
+    &__box, &__payment, &__security &__socials, &__store
+        padding: 16px 0
+
+    &__row
+        @media media-min-lg
+            display: flex
+            justify-content: space-between
+
+    &__box
+        @media media-min-lg
+            min-width: 0
+
+            &:last-child
+                flex: 0 1 204px
+
+    &__socials
+        @media media-min-lg
+            flex: 0 1 204px
+            flex-wrap: wrap
+            min-width: 0
+
+    &__payment, &__security, &__socials
+        @media media-min-lg
+            display: flex
+            align-items: center
+
+            .footer__subtitle
+                margin-right: 16px
+
+    .certs__img
+        height: 33px

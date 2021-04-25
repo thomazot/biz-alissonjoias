@@ -1,0 +1,57 @@
+.mycart
+    .header &
+        @media media-max-lg
+            margin: 0 10px
+            border-radius: 4px
+            background: var(--primary)
+
+    &__header
+        position: relative
+        margin: 0
+
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+
+            @media media-max-lg
+                width: 48px
+                height: 48px
+
+        .ico
+            width: 18px
+            height: 28px
+            color: var(--primary-contrast)
+
+        .text
+            margin-left: 19px
+            color: var(--primary-contrast)
+            font-weight: regular
+            font-size: 14px
+            opacity: .5
+
+            @media media-max-lg
+                display: none
+
+        .qtd
+            position: absolute
+            top: -10px
+            left: 9px
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            background: var(--primary)
+            box-shadow: 0 0 0 3px black
+            color: var(--primary-contrast)
+            font-weight: bold
+            font-size: 10px
+
+            @media media-max-lg
+                top: -5px
+                left: 30px
+
+    &__content
+        display: none !important

@@ -1,5 +1,12 @@
-@media media-max-lg
-    .categories
+.categories
+    &__show
+        flex: 0 0 48px
+        order: -1
+        margin: 0 10px
+        width: 48px
+        height: 48px
+
+    @media media-max-lg
         .parent
             position: relative
 
@@ -41,22 +48,77 @@
         .all-li--0
             padding-bottom: 0
 
-@media media-min-lg
-    .categories
+    @media media-min-lg
+        position: absolute
+        bottom: 0
+        left: 0
         flex: 1
         margin-bottom: 0 !important
         min-width: 0
+        width: 100%
         background: none
 
+        &__all
+            display: none
+
         .a--0
-            color: var(--primary)
-            text-transform: uppercase
+            height: 33px
+            border: 1px dashed transparent
+            color: var(--primary-contrast)
             white-space: nowrap
-            font-weight: semibold
+            font-weight: medium
             font-size: 14px
 
         .li--0
-            order: 1
+            position: static
+            flex: 0 0 auto
+            padding: 13px 0
+            min-width: 0
+            height: auto
 
-        &__all
-            order: 2
+            &:hover .a--0
+                border-color: var(--primary)
+
+        .ul--0
+            position: static
+            justify-content: space-between
+            height: auto
+
+        .box--1
+            display: block
+            padding-bottom: 15px
+            width: 100%
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+            transition: all .2s ease-in-out
+
+            &:before
+                display: block
+                margin: 0 auto
+                padding: 18px 0
+                max-width: 100%
+                width: viewport
+                color: var(--primary)
+                content: attr(data-title)
+                font-weight: bold
+                font-size: 24px
+
+        .ul--1
+            display: flex
+            flex-wrap: wrap
+            margin: 0 auto
+            max-width: 100%
+            width: viewport
+
+        .li--1
+            flex: 0 1 16.66%
+            padding: 14px 0
+
+        .a--1
+            padding: 0
+            color: var(--secundary)
+            font-weight: regular
+            font-size: 14px
+
+            &:hover
+                box-shadow: none
+                color: var(--primary)
