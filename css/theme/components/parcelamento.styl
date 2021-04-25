@@ -1,0 +1,38 @@
+.parcelamento
+    z-index: 10
+    padding: 16px
+    max-width: 100%
+    width: 385px
+    border: 1px solid #EFEFEF
+    border-radius: 4px
+    background: white
+
+    ul
+        column-count: 1
+
+    li
+        flex-flow: nowrap
+        border: 0
+
+        div
+            color: var(--color-text-black)
+            font-weight: regular
+            font-size: 12px
+
+    .valor-total
+        flex: 0 0 auto
+        order: 3
+
+        .label
+            display: none
+
+    .parcela
+        .num, .valor
+            font-weight: regular
+
+    .juros, .s-juros, .valor-total
+        color: var(--color-text-black)
+        font-style: normal
+
+    .s-juros
+        background: none

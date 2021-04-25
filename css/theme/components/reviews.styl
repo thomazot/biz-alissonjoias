@@ -1,0 +1,44 @@
+.reviews
+    @media media-min-lg
+        shadowBorder()
+
+        padding: 30px 0
+        background: #FBFBFB
+
+    &__title
+        @media media-max-lg
+            font-size: 14px
+
+        @media media-min-lg
+            color: var(--primary)
+            font-weight: bold
+            font-size: 20px
+            line-height: 32px
+
+    &__add
+        @media media-min-lg
+            flex: 0 1 340px
+
+        input, textarea
+            box-shadow: none
+
+        .btn
+            border-radius: 4px
+            background: linear-gradient(180deg, #7DE26C 0, #35A333 100%)
+            box-shadow: none
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 14px
+
+    &__resume, &__ratings, &__add
+        background: none
+        box-shadow: none
+
+    .subtitle
+        color: var(--color-text-black)
+        text-transform: uppercase
+        font-size: 14px
+
+    &__add
+        .subtitle
+            color: var(--primary)

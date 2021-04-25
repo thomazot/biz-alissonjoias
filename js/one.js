@@ -98,12 +98,7 @@
          * addSVG() - defaults
          */
         if (neon.default_SVGs !== false) {
-            var truck = {
-                'img-truck': {
-                    selector: '.frete__title',
-                    mode: 'append',
-                },
-            }
+            var truck = {}
             var svgs = {
                 'img-truck': {
                     selector:
@@ -1235,8 +1230,8 @@ $j.fn.neonTheme.custom = {
     m_filters: true, // ativa o responsivo dos Filtros do Catálogo
     m_myaccount: false, // ativa o responsivo da Minha Conta
     m_mycart: false, // ativa o responsivo do Meu Carrinho
-    m_parcelamento: true, // ativa o responsivo do parcelamento na página de produto
-    m_frete: true, // ativa o responsivo do cálculo de frete na página do produto
+    m_parcelamento: false, // ativa o responsivo do parcelamento na página de produto
+    m_frete: false, // ativa o responsivo do cálculo de frete na página do produto
     m_produto: true, // ativa o responsivo de cada bloco da página de produto
     m_tabs: true, // ativa o responsivo do componente .tabs do tema
     m_painelCliente: true, // ativa o responsivo do Menu do Painel de Cliente
@@ -1244,13 +1239,7 @@ $j.fn.neonTheme.custom = {
      * Funcionalidades do Tema
      */
     dropFrom: false,
-    addSVG: {
-        'img-truck': {
-            selector: '.frete .frete__content .input-box label',
-            mode: 'prepend',
-            ratio: false,
-        },
-    },
+    addSVG: {},
 }
 
 /**
@@ -1446,6 +1435,17 @@ $j(document)
         if (bannerCategory.length) {
             $('.breadcrumb').after(bannerCategory)
         }
+
+        addSVG({
+            'z-heart': {
+                mode: 'prepend',
+                selector: '.add-to-links .link-wishlist a',
+            },
+            'z-truck': {
+                mode: 'prepend',
+                selector: '.frete__title',
+            },
+        })
     })
     .on('resizeStop', function (e) {
         // Safe window.resize

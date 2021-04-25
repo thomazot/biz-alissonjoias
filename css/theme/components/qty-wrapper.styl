@@ -1,0 +1,45 @@
+.qty-wrapper
+    .prod__shop &
+        width: 150px
+        border-radius: 4px
+        background: #F8F8F8
+
+        .bt
+            &.less, &.plus
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 50px
+                height: 50px
+                border-radius: 0
+                background: none
+                color: var(--primary)
+                text-indent: 0
+                font-size: 20px
+
+                span
+                    display: inline
+
+                &:before
+                    display: none
+
+            &.less
+                order: -1
+
+        .bt-box
+            display: contents
+            border-radius: 0
+            box-shadow: none
+
+        .input-box
+            display: flex
+
+        input
+            width: 50px
+            height: 50px
+            border: 0
+            background: none
+            box-shadow: none
+            color: #888888
+            font-weight: regular
+            font-size: 16px

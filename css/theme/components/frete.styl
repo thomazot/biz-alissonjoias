@@ -1,0 +1,83 @@
+.frete
+    @media media-min-lg
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+
+    &__results
+        flex: 0 0 100%
+        margin-top: 10px
+
+    &__title
+        padding: 14px 10px 0 0
+        border: 0
+        box-shadow: none
+        color: var(--color-text-black)
+        font-weight: bold
+        font-size: 16px
+
+        .ico
+            width: 24px
+            height: 24px
+            fill: var(--primary)
+
+        span
+            display: none
+
+        &:after
+            content: 'Calcule o Envio'
+
+    &__content
+        display: block
+        flex: 1
+        min-width: 0
+
+    &__form
+        position: relative
+        flex: 1
+        min-width: 0
+        width: 100%
+
+        label
+            display: none
+
+        .input-box
+            flex: 0 0 100%
+            min-width: 0
+
+        .input-text
+            position: relative
+            z-index: 1
+            height: 50px
+            border-color: #EFEFEF
+            border-radius: 4px
+            box-shadow: none
+
+    &__actions
+        position: static
+
+        .btn
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 2
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 50px
+            background: none
+            box-shadow: none
+            color: var(--color-text-black)
+            text-transform: uppercase
+            font-size: 12px
+
+            span
+                display: none
+
+            &:before
+                content: 'Calcular'
+
+    &__naosei
+        color: #AFAFAF
+        text-align: right
+        font-size: 12px
