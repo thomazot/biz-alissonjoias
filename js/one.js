@@ -1440,6 +1440,12 @@ $j(document)
                 $(event.target).toggleClass('on')
             }
         })
+
+        const bannerCategory = $('.category-image')
+
+        if (bannerCategory.length) {
+            $('.breadcrumb').after(bannerCategory)
+        }
     })
     .on('resizeStop', function (e) {
         // Safe window.resize
