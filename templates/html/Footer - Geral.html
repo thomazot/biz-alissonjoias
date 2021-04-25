@@ -1,0 +1,48 @@
+<div class="footer__row">
+    <div class="footer__box footer__box--sobre">
+        <h3 class="footer__title">Sobre</h3>
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="sobre"}}
+        </div>
+    </div>
+    <div class="footer__box footer__box--sobre">
+        <h3 class="footer__title">Departamentos</h3>
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="departamentos"}}
+        </div>
+    </div>
+    <div class="footer__box footer__box--sobre">
+        <h3 class="footer__title">Ajuda e Suporte</h3>
+        <div class="footer__content">
+            {{block type="menubuilder/output" identifier="ajuda-e-suporte"}}
+        </div>
+    </div>
+    <div class="footer__box footer__box--sobre">
+        <h3 class="footer__title">Atendimento</h3>
+        <div class="footer__content">
+            <span>Telefone</span> <br />
+            <a href="tel:85996360984" class="footer__phone"><small>85</small> 996360984</a><br />
+            <a href="mailto:atendimento@alissonjoias.com.br" class="footer__email">atendimento@alissonjoias.com.br</a><br />
+            <span>De 08:30 as 17:30 segunda a sexta, sábado 9h as 16h</span>
+        </div>
+    </div>
+</div>
+<div class="footer__row footer__row--two">
+    <div class="footer__payment-security">
+        <div class="footer__payment">
+            <h4 class="footer__subtitle">Formas de Pagamento</h4>
+            <div class="footer__content">{{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="pagtos_footer" pagtos="all"}}</div>
+        </div>
+        <div class="footer__security">
+            <h4 class="footer__subtitle">Segurança</h4>
+            <div class="footer__content">{{widget type="interface/widget_seals" template="interface/widgets/seals.phtml" identificador="selos_footer" seals="all"}}</div>
+        </div>
+    </div>
+    <div class="footer__socials">
+        <h4 class="footer__subtitle">Redes Sociais</h4>
+        <div class="footer__content">
+            {{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="socials" redes="1"}}
+        </div>
+        <div class="footer__store">ALISSON JOIAS LTDA CNPJ 21.472.300/0001-43</div>
+    </div>
+</div>
