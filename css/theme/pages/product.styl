@@ -125,3 +125,38 @@
                     font-weight: 500
                     font-size: 14px
                     line-height: 32px
+
+@media media-min-lg
+    .product-image-gallery
+        box-shadow: none
+
+    .product-image-container
+        border-radius: 4px
+        box-shadow: 0 0 0 1px #EFEFEF
+
+    .product-image-thumbs
+        justify-content: center
+        padding: 30px 0
+        gap: 16px
+
+        li
+            flex: 0 0 auto
+            padding: 0
+            min-width: 0
+            min-height: 0
+
+        .thumb-link
+            flex: 0 0 auto
+            padding: 0
+            width: 4px
+            height: 4px
+            border-radius: 4px
+            background: #D2D2D2
+
+            &.on, &:hover
+                width: 32px
+                background: var(--primary)
+                box-shadow: none
+
+            img
+                display: none
