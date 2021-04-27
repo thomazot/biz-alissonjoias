@@ -1,0 +1,49 @@
+.options
+    .prod__shop &
+        &:before
+            display: none
+
+        &__caption
+            color: var(--primary)
+            font-weight: bold
+            font-size: 16px
+            line-height: 32px
+            opacity: 1
+
+        input[type=text]
+            border: solid 1px #EFEFEF
+            box-shadow: none
+
+        p.note
+            color: var(--color-text-black)
+            text-align: right
+            font-size: 10px
+            opacity: .8
+
+        .options-list
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-between
+            gap: 10px
+
+            .radio
+                position: absolute
+                opacity: 0
+
+                &:checked + .label label
+                    border-color: var(--primary)
+
+            label
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 40px
+                height: 40px
+                border: solid 1px #EFEFEF
+                border-radius: 50%
+                color: var(--color-text-black)
+                font-size: 12px
+                cursor: pointer
+
+                &:hover
+                    border-color: var(--primary)

@@ -12408,6 +12408,55 @@ body {
   }
 }
 
+.prod__shop .options:before {
+  display: none;
+}
+.prod__shop .options__caption {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  opacity: 1;
+}
+.prod__shop .options input[type=text] {
+  border: solid 1px #efefef;
+  box-shadow: none;
+}
+.prod__shop .options p.note {
+  color: var(--color-text-black);
+  text-align: right;
+  font-size: 0.63rem;
+  opacity: 0.8;
+}
+.prod__shop .options .options-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.prod__shop .options .options-list .radio {
+  position: absolute;
+  opacity: 0;
+}
+.prod__shop .options .options-list .radio:checked + .label label {
+  border-color: var(--primary);
+}
+.prod__shop .options .options-list label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 1px #efefef;
+  border-radius: 50%;
+  color: var(--color-text-black);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.prod__shop .options .options-list label:hover {
+  border-color: var(--primary);
+}
+
 .owl-carousel {
   --color: #4b4c6f;
   --color-pagination: #4c462a;
