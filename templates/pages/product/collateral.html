@@ -1,0 +1,70 @@
+<dl class="tabs">
+	<dt class="tabs__tab"><span>Descrição do produto</span></dt>
+	<dd class="tabs__content">
+   		<div class="std">@descricao</div>
+	</dd>
+</dl>
+
+@if(peso_medio OR pedra OR materia OR largura OR acabamento OR brand OR tamanho OR color)
+<div class="expecification">
+    <div class="expecification__header">
+        <h3 class="expecification__title">Especificações técnicas</h3>
+        <div class="expecification__subtitle">Características</div>
+    </div>
+    <div class="expecification__main">
+        @if(peso_medio)
+        <div class="expecification__row">
+            <div class="expecification__item">Peso Médio</div> 
+            <div class="expecification__item">@atributo(peso_medio)</div>
+        </div>
+        @endif(peso_medio)
+        @if(pedra)
+        <div class="expecification__row">
+            <div class="expecification__item">Pedra</div> 
+            <div class="expecification__item">@atributo(pedra)</div>
+        </div>
+        @endif(pedra)
+        @if(material)
+        <div class="expecification__row">
+            <div class="expecification__item">Material</div> 
+            <div class="expecification__item">@atributo(material)</div>
+        </div>
+        @endif(material)
+        @if(largura)
+        <div class="expecification__row">
+            <div class="expecification__item">Largura:</div> 
+            <div class="expecification__item">@atributo(largura)</div>
+        </div>
+        @endif(largura)
+        @if(acabamento)
+        <div class="expecification__row">
+            <div class="expecification__item">Acabamento</div> 
+            <div class="expecification__item">@atributo(acabamento)</div>
+        </div>
+        @endif(acabamento)
+        @if(brand)
+        <div class="expecification__row">
+            <div class="expecification__item">Marca</div> 
+            <div class="expecification__item">@atributo(brand)</div>
+        </div>
+        @endif(brand)
+        @if(tamanho)
+        <div class="expecification__row">
+            <div class="expecification__item">Tamanho</div> 
+            <div class="expecification__item">@atributo(tamanho)</div>
+        </div>
+        @endif(tamanho)
+        @if(color)
+        <div class="expecification__row">
+            <div class="expecification__item">Cor</div> 
+            <div class="expecification__item">@atributo(color)</div>
+        </div>
+        @endif(color)
+    </div>
+</div>
+@endif(peso_medio OR pedra OR materia OR largura OR acabamento OR brand OR tamanho OR color)
+
+@avaliacoes(form)
+
+
+<div class="carrossel">@relacionados</div>

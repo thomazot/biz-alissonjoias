@@ -11855,6 +11855,36 @@ body {
   box-shadow: none;
 }
 
+.expecification__title {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.expecification__subtitle {
+  padding: 0.63rem 0;
+  color: #888;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 2rem;
+}
+.expecification__main {
+  padding: 0.63rem 0;
+}
+.expecification__item {
+  flex: 0 1 50%;
+  padding: 1rem;
+  color: #888;
+  font-weight: 400;
+  font-size: 0.88rem;
+}
+.expecification__row {
+  display: flex;
+}
+.expecification__row:nth-child(odd) {
+  background: #f7f7f7;
+}
+
 @media (min-width: 993px) {
   .filters > .title {
     display: none;
